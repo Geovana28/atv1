@@ -1,6 +1,6 @@
 package While;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Matricula {
     public static void main(String[] args) {

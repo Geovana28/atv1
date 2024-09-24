@@ -1,6 +1,6 @@
 package While;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Televisao {
     public static void main(String[] args) {
@@ -28,22 +28,22 @@ public class Televisao {
 
                     switch (canal) {
                         case 2:
-                            canal2 += pessoas;
+                            canal2 = canal2 + pessoas;  
                             break;
                         case 4:
-                            canal4 += pessoas;
+                            canal4 = canal4 + pessoas;  
                             break;
                         case 5:
-                            canal5 += pessoas;
+                            canal5 = canal5 + pessoas;  
                             break;
                         case 7:
-                            canal7 += pessoas;
+                            canal7 = canal7 + pessoas;  
                             break;
                         case 12:
-                            canal12 += pessoas;
+                            canal12 = canal12 + pessoas; 
                             break;
                     }
-                    totalPessoas += pessoas;
+                    totalPessoas = totalPessoas + pessoas; 
                 } else {
                     System.out.println("Número de canal inválido. Tente novamente.");
                 }

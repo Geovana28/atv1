@@ -1,6 +1,6 @@
 package While;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Salario {
     public static void main(String[] args) {
@@ -20,8 +20,8 @@ public class Salario {
                 System.out.println("Digite a quantidade de filhos: ");
                 double filhos = entrada.nextDouble();
 
-                somaSalarios += salario;
-                somaFilhos += filhos;
+                somaSalarios = somaSalarios + salario;
+                somaFilhos = somaFilhos + filhos;
                 totalPessoas++; 
             }
             if (totalPessoas > 0) {
