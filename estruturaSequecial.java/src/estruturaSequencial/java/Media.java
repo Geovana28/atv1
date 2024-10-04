@@ -11,10 +11,9 @@ import java.util.*;
 			numero1 = entrada.nextDouble();
 			numero2 = entrada.nextDouble();
 			numero3 = entrada.nextDouble();
-		}
         soma = numero1 + numero2 + numero3;
         resultado = soma/3;
         System.out.println("A média dos três números é: " + resultado);
-
+        }
     }
 }

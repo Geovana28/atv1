@@ -21,7 +21,7 @@ public class MediaIdades {
                     continue; 
                 }
 
-                somaIdades += idade; 
+                somaIdades = somaIdades + idade; 
             }
 
             double media = (double) somaIdades / n;

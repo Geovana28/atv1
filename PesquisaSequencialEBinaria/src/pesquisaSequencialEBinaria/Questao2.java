@@ -66,7 +66,7 @@ public class Questao2 {
         }
 
         System.out.println("Número não encontrado.");
-        return comparacoes;
+        return -1;
             }
 		
 	

@@ -69,10 +69,9 @@ public class Questao1 {
         if (i < vetor.length) {
             System.out.println("Número encontrado na posição " + i);
         } else {
-            System.out.println("Número não encontrado.");
+        	System.out.println("Número não encontrado.");
         }
-        
-        return comparacoes;
+            return -1;
     }
 }
 
