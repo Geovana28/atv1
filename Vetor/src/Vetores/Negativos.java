@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Negativos {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
             double[] vetor = new double[10]; 
 
             for (int i = 0; i < vetor.length; i++) {
@@ -22,7 +22,7 @@ public class Negativos {
                 if (vetor[i] < 0) {
                     System.out.println("A posição " + i + " armazena o número negativo: " + vetor[i]);
                 }
-            }
+            entrada.close();
         }
     }
 }

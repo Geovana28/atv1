@@ -1,10 +1,10 @@
 package EstruturaCondicional;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Funcao {
 	public static double f(double x) {
-	    int caso;
+	  int caso;
 
 	    if (x < -2) {
 	        caso = 1;
@@ -27,14 +27,14 @@ public class Funcao {
 	}
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+     Scanner entrada = new Scanner(System.in);
 
         System.out.print("Digite um valor para x: ");
-        double entrada = scanner.nextDouble();
+        double x = entrada.nextDouble();
 
-        double resultado = f(entrada);
-        System.out.printf("O valor da função f(x) para x = %.2f é %.2f.%n", entrada, resultado);
-
-        scanner.close();
+        double resultado = f(x);
+        System.out.printf("O valor da função f(x) para x = %.2f é %.2f.%n", x, resultado);
+        entrada.close();
+     
     }
 }

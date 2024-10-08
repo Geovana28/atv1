@@ -1,10 +1,10 @@
 package EstruturaCondicional;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Media3Notas {
 	public static void main(String[] args) {
-		try (Scanner entrada = new Scanner(System.in)) {
+		Scanner entrada = new Scanner(System.in);
 			double nota1, nota2, nota3, media;
 
 			System.out.println("Digite suas três notas: ");
@@ -14,14 +14,16 @@ public class Media3Notas {
 
 			media = (nota1 + nota2 + nota3) / 3;
 
-			if (media >= 0 && media < 3) {
+			if (media >= 0 && media < 3) 
 				System.out.println("Você está reprovado!");
-			} else if (media >= 3 && media < 7) {
+				
+			 else if (media >= 3 && media < 7) 
 				System.out.println("Você está apto para realizar o exame de recuperação!");
-			} else if (media >= 7 && media <= 10) {
+				
+			 else if (media >= 7 && media <= 10) 
 				System.out.println("Você está aprovado!");
 
-			}
+			entrada.close();
 		}
 	}
-}
+

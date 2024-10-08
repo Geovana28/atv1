@@ -4,7 +4,7 @@ import java.util.*;
 
 public class MaiorMenor {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
             double[] vetor = new double[10]; 
             double maior = Double.MIN_VALUE; 
             double menor = Double.MAX_VALUE;
@@ -28,6 +28,7 @@ public class MaiorMenor {
 
             System.out.printf("\nO menor número informado é: %.2f\n", menor);
             System.out.printf("O maior número informado é: %.2f\n", maior);
-        }
+        
+    entrada.close();
     }
 }

@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Televisao {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
             
             double canal2 = 0;
             double canal4 = 0;
@@ -58,6 +58,6 @@ public class Televisao {
             } else {
                 System.out.println("Nenhum dado foi inserido.");
             }
-        }
+            entrada.close();
     }
 }

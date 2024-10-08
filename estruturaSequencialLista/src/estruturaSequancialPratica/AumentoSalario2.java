@@ -5,7 +5,7 @@ import java.util.*;
 public class AumentoSalario2 {
 
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
             Double salario, aumento, novoSalario;
             System.out.println("Digite o seu salário: ");
             salario = entrada.nextDouble();
@@ -13,6 +13,7 @@ public class AumentoSalario2 {
             aumento = entrada.nextDouble();
             novoSalario = salario + (salario * (aumento / 100));
             System.out.println("O seu salário após o aumento é: R$ " + novoSalario);
-        }
+            
+            entrada.close();
     }
 }

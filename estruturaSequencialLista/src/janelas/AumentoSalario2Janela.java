@@ -6,16 +6,15 @@ public class AumentoSalario2Janela {
 
     public static void main(String[] args) {
      
-            String salarioStr = JOptionPane.showInputDialog("Digite o seu salário:");
-            double salario = Double.parseDouble(salarioStr);
+            String salarioString = JOptionPane.showInputDialog("Digite o seu salário:");
+            double salario = Double.parseDouble(salarioString);
             
-            String aumentoStr = JOptionPane.showInputDialog("Digite a porcentagem de aumento:");
-            double aumento = Double.parseDouble(aumentoStr);
+            String aumentoString = JOptionPane.showInputDialog("Digite a porcentagem de aumento:");
+            double aumento = Double.parseDouble(aumentoString);
             
             double novoSalario = salario + (salario * (aumento / 100));
             JOptionPane.showMessageDialog(null, "O seu salário após o aumento é: R$ " + novoSalario);
 
-            JOptionPane.showMessageDialog(null, "Por favor, insira valores numéricos válidos!", "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }
 

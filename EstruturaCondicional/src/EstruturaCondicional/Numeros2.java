@@ -1,13 +1,14 @@
 package EstruturaCondicional;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Numeros2 {
 	public static void main(String[] args) {
-		try (Scanner entrada = new Scanner(System.in)) {
+		Scanner entrada = new Scanner(System.in);
 			double numero1, numero2, resultado;
 			int opcao;
 			System.out.println("Digite dois números:");
+			
 			numero1 = entrada.nextDouble();
 			numero2 = entrada.nextDouble();
 			System.out.println("Escolha uma das opções abaixo:");
@@ -48,6 +49,6 @@ public class Numeros2 {
 			default:
 				System.out.println("Opção inválida. Escolha uma opção de 1 a 4.");
 			}
-		}
+			entrada.close();
 	}
 }

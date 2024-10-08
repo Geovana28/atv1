@@ -20,7 +20,5 @@ public class IdadeJanela {
 
             int idadeFutura = anoFuturo - anoDeNascimento;
             JOptionPane.showMessageDialog(null, "Sua idade no ano " + anoFuturo + " será: " + idadeFutura);
-
-            JOptionPane.showMessageDialog(null, "Por favor, insira um número válido!", "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }

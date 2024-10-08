@@ -21,8 +21,6 @@ public class Peso2Janela {
             JOptionPane.showMessageDialog(null, 
                 "Se você engordar " + porcentagemEngordar + "%, seu novo peso será: " + ganhoPeso + " kg\n" +
                 "Se você emagrecer " + porcentagemEmagrecer + "%, seu novo peso será: " + perdaPeso + " kg"   );
-            
-            JOptionPane.showMessageDialog(null, "Por favor, insira valores numéricos válidos!", "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }
 

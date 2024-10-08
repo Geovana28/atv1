@@ -15,9 +15,8 @@ public class MediaNotasJanelas {
             
             double media = (numero1 + numero2 + numero3) / 3;
             
-            JOptionPane.showMessageDialog(null, "A média das suas notas é: " + media);
+            JOptionPane.showMessageDialog(null, "A média das notas é: " + media);
 
-            JOptionPane.showMessageDialog(null, "Por favor, insira um número válido!", "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }
 

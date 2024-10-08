@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Questao2 {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
            
             int[][] matriz1 = new int[2][2];
             int[][] matriz2 = new int[2][2];
@@ -39,6 +39,6 @@ public class Questao2 {
                 }
                 System.out.println();
             }
-        }
+        entrada.close();
     }
 }

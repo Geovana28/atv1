@@ -6,7 +6,7 @@ public class Dolar {
 
 	public static void main(String [] args) {
 		double cotacaoDolar, quantidadeDolar, valorReal;
-		try (Scanner entrada = new Scanner(System.in)){
+		Scanner entrada = new Scanner(System.in);
 			System.out.println("Digite a cotação do dolar hoje: ");
 			cotacaoDolar = entrada.nextDouble();
 			System.out.println("Digite a quantidade que você tem em dolar: ");
@@ -14,6 +14,6 @@ public class Dolar {
 			valorReal = cotacaoDolar * quantidadeDolar;
 			System.out.println("O valor em real é: R$" + valorReal);
 			
-		}
+			entrada.close();
 	}
 }

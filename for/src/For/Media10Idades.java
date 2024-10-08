@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Media10Idades {
 	public static void main(String []args) {
-		try (Scanner entrada =new Scanner (System.in)){
+		Scanner entrada =new Scanner (System.in);
           
           int quantidadeIdade = 10;
             int somaIdades = 0; 
@@ -25,7 +25,8 @@ public class Media10Idades {
 
             double media = (double) somaIdades / quantidadeIdade;
             System.out.printf("A média das idades informadas é: %.2f\n", media);
-        }
+            
+        entrada.close();
     }
 }
 

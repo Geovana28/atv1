@@ -1,10 +1,10 @@
 package For;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class SexoFeminino {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
             int quantidadeFeminino = 0; 
    
             for (int i = 0; i < 10; i++) {
@@ -20,7 +20,7 @@ public class SexoFeminino {
             }
 
             System.out.println("Número de mulheres entre 20 e 40 anos: " + quantidadeFeminino);
-        }
+        entrada.close();
     }
 }
 

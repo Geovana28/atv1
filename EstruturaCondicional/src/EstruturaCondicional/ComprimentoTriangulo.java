@@ -1,27 +1,40 @@
 package EstruturaCondicional;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class ComprimentoTriangulo {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
-            double ladoX, ladoY, ladoZ;
+        Scanner entrada = new Scanner(System.in);
+            double ladoA, ladoB, ladoC;
 
-            System.out.println("Digite os três valores: ");
-            ladoX = entrada.nextDouble();
-            ladoY = entrada.nextDouble();
-            ladoZ = entrada.nextDouble();
+            System.out.println("Informe o primeiro lado do triângulo em cm: ");
+            ladoA = entrada.nextDouble();
+            System.out.println("Informe o segundo lado do triângulo em cm: ");
+            ladoB = entrada.nextDouble();
+            System.out.println("Informe o terceiro lado do triângulo em cm: ");
+            ladoC = entrada.nextDouble();
 
-            if (verificarTriangulo(ladoX, ladoY, ladoZ)) {
-                System.out.println("Os valores informados podem ser os comprimentos dos lados de um triângulo.");
-            } else {
-                System.out.println("Os valores informados não podem ser os comprimentos dos lados de um triângulo.");
+            boolean trianguloValido = true;
+
+            if (!(ladoB - ladoC < ladoA && ladoA < ladoB + ladoC)) {
+                System.out.println("A condição |" + ladoB + " - " + ladoC + "| < " + ladoA + " < " + ladoB + " + " + ladoC + " não é válida.");
+                trianguloValido = false; 
             }
+            if (!(ladoA - ladoC < ladoB && ladoB < ladoA + ladoC)) {
+                System.out.println("A condição |" + ladoA + " - " + ladoC + "| < " + ladoB + " < " + ladoA + " + " + ladoC + " não é válida.");
+                trianguloValido = false; 
+            }
+            if (!(ladoA - ladoB < ladoC && ladoC < ladoA + ladoB)) {
+                System.out.println("A condição |" + ladoA + " - " + ladoB + "| < " + ladoC + " < " + ladoA + " + " + ladoB + " não é válida.");
+                trianguloValido = false; 
+            }
+
+            if (trianguloValido) {
+                System.out.println("Os três valores informados podem ser os comprimentos dos lados de um triângulo.");
+            } else {
+                System.out.println("Os três valores informados não podem ser os comprimentos dos lados de um triângulo.");
+                entrada.close();
         }
     }
-
-    public static boolean verificarTriangulo(double a, double b, double c) {
-        
-        return (a + b > c) && (a + c > b) && (b + c > a);
-    }
 }
+

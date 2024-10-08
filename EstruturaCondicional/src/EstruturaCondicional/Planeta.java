@@ -1,11 +1,12 @@
 package EstruturaCondicional;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Planeta {
 	public static void main(String[] args) {
-		try (Scanner entrada = new Scanner(System.in)) {
+		Scanner entrada = new Scanner(System.in);
 			double v0, instante, velocidade, altura;
+			
 			System.out.println("Escolha um dos planetas abaixo: ");
 			System.out.println("1 - Mercúrio");
 			System.out.println("2 - Vênus");
@@ -16,12 +17,16 @@ public class Planeta {
 			System.out.println("7 - Urano");
 			System.out.println("8 - Netuno");
 			System.out.println("9 - Plutão");
+			
 			System.out.print("Digite o número do planeta escolhido: ");
 			int planeta = entrada.nextInt();
+			
 			System.out.print("Digite a velocidade inicial (v0) em m/s: ");
 			v0 = entrada.nextDouble();
+			
 			System.out.print("Digite o instante (t) em segundos: ");
 			instante = entrada.nextDouble();
+			
 			double gravidade;
 			switch (planeta) {
 			case 1:
@@ -58,9 +63,8 @@ public class Planeta {
 			velocidade = v0 - gravidade * instante;
 			altura = v0 * instante - 0.5 * gravidade * instante * instante;
 
-			System.out.println("No planeta escolhido:");
-			System.out.println("A velocidade no instante t é de: " + velocidade + " m/s");
-			System.out.println("A altura no instante t é de: " + altura + " m");
-		}
+			System.out.println("No planeta " + planeta + ": A velocidade no instante t é de: " + velocidade + " m/s e a altura no instante t é de: " + altura + " m");
+
+			entrada.close();
 	}
 }

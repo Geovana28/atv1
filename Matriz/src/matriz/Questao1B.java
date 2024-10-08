@@ -5,7 +5,7 @@ import java.util.*;
 public class Questao1B {
 
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
             int i, j;
             int[][] matriz = new int[5][5];
 
@@ -16,15 +16,15 @@ public class Questao1B {
                 }
             }
 
-            System.out.println("\nMatriz informada:");
+            System.out.println("Matriz informada:");
             for (i = 0; i < matriz.length; i++) {
                 for (j = 0; j < matriz[i].length; j++) {
-                    System.out.printf("%2d ", matriz[i][j]);
+                    System.out.printf("%3d ", matriz[i][j]);
                 }
                 System.out.println();
             }
 
-            System.out.println("\nElementos em que o índice da linha é par e o índice da coluna é ímpar:");
+            System.out.println("Elementos em que o índice da linha é par e o índice da coluna é ímpar:");
             for (i = 0; i < matriz.length; i++) {
                 if (i % 2 == 0) { 
                     for (j = 0; j < matriz[i].length; j++) {
@@ -33,7 +33,7 @@ public class Questao1B {
                         }
                     }
                 }
-            }
+            entrada.close();
         }
     }
 }

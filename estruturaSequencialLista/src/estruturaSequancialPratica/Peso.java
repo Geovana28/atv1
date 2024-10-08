@@ -1,11 +1,11 @@
 package estruturaSequancialPratica;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Peso {
 
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
             Double peso, porcentagemEngordar, porcentagemEmagrecer, ganhoPeso, perdaPeso;
 
             System.out.println("Digite o seu peso: ");
@@ -23,6 +23,6 @@ public class Peso {
 
             System.out.println("Se você engordar " + porcentagemEngordar + "%, seu novo peso será: " + ganhoPeso + " kg");
             System.out.println("Se você emagrecer " + porcentagemEmagrecer + "%, seu novo peso será: " + perdaPeso + " kg");
-        }
+            entrada.close();
     }
 }

@@ -1,10 +1,10 @@
 package EstruturaCondicional;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Apto {
 	public static void main(String[] args) {
-		try (Scanner entrada = new Scanner(System.in)) {
+		Scanner entrada = new Scanner(System.in);
 			int dias;
 			String tipoApartamento;
 			double valorDiaria = 0.0, totalAPagar;
@@ -34,11 +34,12 @@ public class Apto {
 			} else {
 				System.out.println("Tipo de apartamento inválido. Digite 'Simples' ou 'Duplo'.");
 				return;
+				
 			}
 
 			totalAPagar = dias * valorDiaria;
 
 			System.out.println("O total a ser pago é: R$ " + totalAPagar);
-		}
+			entrada.close();
 	}
 }

@@ -1,14 +1,14 @@
 package estruturaSequancialPratica;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Tabuada {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
 			int numero;
 
 			System.out.println("Digite um número: ");
-			numero = scanner.nextInt();  
+			numero = entrada.nextInt();  
 
 			System.out.println("Tabuada de multiplicação do número " + numero + ":");
 			System.out.println(numero + " x 0 = " + (numero * 0));
@@ -22,7 +22,7 @@ public class Tabuada {
 			System.out.println(numero + " x 8 = " + (numero * 8));
 			System.out.println(numero + " x 9 = " + (numero * 9));
 			System.out.println(numero + " x 10 = " + (numero * 10));
-		}
+			entrada.close();
  
     }
 }

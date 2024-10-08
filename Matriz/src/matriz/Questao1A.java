@@ -5,7 +5,7 @@ import java.util.*;
  public class Questao1A{
 
     public static void main(String[] args) {
-      try (Scanner entrada = new Scanner(System.in)){
+      Scanner entrada = new Scanner(System.in);
       int i, j;
              int[][] matriz = new int[5][5];
            for(i = 0; i < matriz.length; i++)
@@ -28,7 +28,7 @@ import java.util.*;
          
               }
          
-        }
+        entrada.close();
 
     }
 

@@ -18,7 +18,5 @@ public class TabuadaJanelas {
         tabuada = tabuada + numero + " X 8 = " + (numero * 8) + "\n";
         tabuada = tabuada + numero + " X 9 = " + (numero * 9) + "\n";
         tabuada = tabuada + numero + " X 10 = " + (numero * 10) + "\n";
-
-        JOptionPane.showMessageDialog(null, tabuada, "Tabuada", JOptionPane.INFORMATION_MESSAGE);
     }
 }

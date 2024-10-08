@@ -10,8 +10,6 @@ public class CelsiusJanela {
 			double farenheit = celsius * 1.8 +32;
 			JOptionPane.showMessageDialog(null, "A temperatura em farenheits é: " + farenheit);
 
-            JOptionPane.showMessageDialog(null, "Por favor, insira um número válido!", "Erro", JOptionPane.ERROR_MESSAGE);
-	
 		}
 	}
 

@@ -13,7 +13,7 @@ public class Potencia {
             double potencia = 1; 
             
             for (int i = 0; i < numero2; i++) {
-                potencia =potencia * numero1; 
+                potencia = potencia * numero1; 
             }
 
             System.out.println("O resultado de " + numero1 + " elevado a " + numero2 + " é: " + potencia);

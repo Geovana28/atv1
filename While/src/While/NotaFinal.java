@@ -4,7 +4,7 @@ import java.util.*;
 
 public class NotaFinal {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
             int totalAlunos90ouMais = 0;  
             int totalReprovados = 0;     
             double maiorNota = 0;
@@ -14,34 +14,32 @@ public class NotaFinal {
 
             while (true) {
                 System.out.println("Digite a nota do aluno (digite uma nota negativa para terminar): ");
-                double nota = scanner.nextDouble();
+                double nota = entrada.nextDouble();
 
-                if (nota < 0) {
+                if (nota < 0) 
                     break;  
-                }
-
+                
                 System.out.println("Digite o total de faltas do aluno: ");
-                int faltas = scanner.nextInt();
+                int faltas = entrada.nextInt();
 
                 
-                if (nota >= 90) {
+                if (nota >= 90) 
                     totalAlunos90ouMais++;
-                }
+                
 
-                if (nota < 70 || faltas >= 20) {
+                if (nota < 70 || faltas >= 20) 
                     totalReprovados++;
-                }
+                
 
-                if (nota > maiorNota) {
+                if (nota > maiorNota) 
                     maiorNota = nota;
-                }
-                if (nota < menorNota) {
+                
+                
+                if (nota < menorNota) 
                     menorNota = nota;
-                }
-
+                
                 somaNotas = somaNotas + nota;
                 totalAlunos++;
-            }
 
             if (totalAlunos > 0) {
                 double mediaNotas = somaNotas / totalAlunos;
@@ -54,6 +52,14 @@ public class NotaFinal {
             } else {
                 System.out.println("Nenhum dado foi inserido.");
             }
-        }
+            entrada.close();
+            }
     }
 }
+          
+            
+            
+            
+   
+           
+

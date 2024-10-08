@@ -1,22 +1,26 @@
 package estruturaSequancialPratica;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Raio {
 
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
-            Double raio, comprimentoEsfera, volumeEsfera, areaEsfera;
-            final double PI = Math.PI; 
+        Scanner entrada = new Scanner(System.in);
+            double raio, comprimentoEsfera, volumeEsfera, areaEsfera;
+            
+            double PI = 3.14159; 
             System.out.println("Digite o valor do raio: ");
             raio = entrada.nextDouble();
+            
             comprimentoEsfera = 2 * PI * raio;
-            volumeEsfera = (4.0 / 3.0) * PI * Math.pow(raio, 3);
-            areaEsfera = 4 * PI * Math.pow(raio, 2);
+            
+            volumeEsfera = (4.0 / 3.0) * PI * (raio * raio * raio);
+            
+            areaEsfera = 4 * PI * (raio * raio);
+            
             System.out.println("O comprimento da esfera (circunferência) é: " + comprimentoEsfera);
             System.out.println("O volume da esfera é: " + volumeEsfera);
             System.out.println("A área da superfície da esfera é: " + areaEsfera);
-        }
+            entrada.close();
     }
 }
-

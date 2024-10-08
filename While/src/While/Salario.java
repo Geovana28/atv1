@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Salario {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
             double somaSalarios = 0; 
             double somaFilhos = 0; 
             int totalPessoas = 0; 
@@ -33,6 +33,6 @@ public class Salario {
             } else {
                 System.out.println("Nenhum dado foi inserido.");
             }
-        }
+        entrada.close();
     }
 }

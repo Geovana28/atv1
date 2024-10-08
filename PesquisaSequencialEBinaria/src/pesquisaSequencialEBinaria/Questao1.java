@@ -1,6 +1,6 @@
 package pesquisaSequencialEBinaria;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Questao1 {
     public static void main(String[] args) {
@@ -69,9 +69,12 @@ public class Questao1 {
         if (i < vetor.length) {
             System.out.println("Número encontrado na posição " + i);
         } else {
-        	System.out.println("Número não encontrado.");
+            System.out.println("Número não encontrado.");
         }
-            return -1;
+        
+        return comparacoes; 
     }
-}
+
+    }
+
 

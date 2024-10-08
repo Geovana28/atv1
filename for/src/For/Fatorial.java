@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Fatorial {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
             System.out.println("Digite um número para calcular o fatorial: ");
             int n = entrada.nextInt();
 
@@ -17,6 +17,6 @@ public class Fatorial {
                 }
                 System.out.println("O fatorial de " + n + " é: " + fatorial);
             }
-        }
+        entrada.close();
     }
 }

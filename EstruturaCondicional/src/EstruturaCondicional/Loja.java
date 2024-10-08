@@ -1,10 +1,10 @@
 package EstruturaCondicional;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Loja {
 	public static void main(String[] args) {
-		try (Scanner entrada = new Scanner(System.in)) {
+		Scanner entrada = new Scanner(System.in);
 			System.out.println("1 - Sapato: ");
 			System.out.println("2 - Bolsa: ");
 			System.out.println("3 - Camisa: ");
@@ -32,6 +32,6 @@ public class Loja {
 				System.out.println("Código inválido. Por favor, digite um código de produto válido.");
 				break;
 			}
-		}
+			entrada.close();
 	}
 }

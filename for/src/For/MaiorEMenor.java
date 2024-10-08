@@ -4,7 +4,7 @@ import java.util.*;
 
 public class MaiorEMenor {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
             int maior = Integer.MIN_VALUE; 
             int menor = Integer.MAX_VALUE; 
             int numero;
@@ -30,7 +30,8 @@ public class MaiorEMenor {
                 System.out.println("O menor número informado é: " + menor);
             } else {
                 System.out.println("Nenhum número válido foi informado.");
+            
+         entrada.close();
             }
-        }
     }
 }

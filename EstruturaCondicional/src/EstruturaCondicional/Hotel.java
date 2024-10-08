@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class Hotel {
 	public static void main(String[] args) {
-		try (Scanner entrada = new Scanner(System.in)) {
+		Scanner entrada = new Scanner(System.in);
 			int diarias;
-			double valorDiaria = 500.0, taxaServico, valorTotal;
+			double valorDiaria, taxaServico, valorTotal;
+			valorDiaria = 500.0; 
 			System.out.print("Digite quantas diárias você passou no hotel: ");
 			diarias = entrada.nextInt();
 			if (diarias < 15) {
@@ -18,6 +19,6 @@ public class Hotel {
 			}
 			valorTotal = diarias * (valorDiaria + taxaServico);
 			System.out.println("O valor total da sua estadia é de: R$ " + valorTotal);
-		}
+			entrada.close();
 	}
 }

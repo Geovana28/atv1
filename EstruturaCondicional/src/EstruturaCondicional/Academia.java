@@ -1,10 +1,10 @@
 package EstruturaCondicional;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Academia {
 	public static void main(String[] args) {
-		try (Scanner entrada = new Scanner(System.in)) {
+		Scanner entrada = new Scanner(System.in);
 			int idade;
 			String sexo;
 			double mensalidade = 0.0;
@@ -43,6 +43,7 @@ public class Academia {
 			}
 
 			System.out.println("O valor da mensalidade é: R$ " + mensalidade);
-		}
+			entrada.close();
+		
 	}
 }
