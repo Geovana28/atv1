@@ -2,7 +2,7 @@ package pesquisaSequencialEBinaria;
 
 import java.util.*;
 
-public class Questao1 {
+public class Questao1Booleana {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int[] vetor = new int[10];
@@ -24,6 +24,7 @@ public class Questao1 {
             int numero = entrada.nextInt();
 
             int comparacoes = 0; 
+            boolean encontrado = false;  
 
             if (escolha == 1) {
                 for (int i = 0; i < vetor.length; i++) {
@@ -31,13 +32,14 @@ public class Questao1 {
                     if (vetor[i] == numero) {
                         System.out.println("Número encontrado na posição " + i);
                         System.out.println("Número de comparações: " + comparacoes); 
+                        encontrado = true; 
                         break; 
                     }
                 }
-                if (comparacoes == vetor.length) { 
+                if (!encontrado) {  
                     System.out.println("Número não encontrado.");
                 }
-            } else if (escolha == 2) {
+            } else if (escolha == 2) { 
                 int[] vetorComSentinela = new int[vetor.length + 1];
                 for (int i = 0; i < vetor.length; i++) {
                     vetorComSentinela[i] = vetor[i];
@@ -45,23 +47,26 @@ public class Questao1 {
                 vetorComSentinela[vetor.length] = numero;
 
                 int i = 0;
-                while (vetorComSentinela[i] != numero) {
+                while (i < vetorComSentinela.length) { 
                     comparacoes++;
+                    if (vetorComSentinela[i] == numero) {
+                        System.out.println("Número encontrado na posição " + i);
+                        encontrado = true;
+                        break; 
+                    }
                     i++;
                 }
 
-                if (i < vetor.length) {
-                    System.out.println("Número encontrado na posição " + i);
-                } else {
+                if (!encontrado) { 
                     System.out.println("Número não encontrado.");
                 }
-                System.out.println("Número de comparações: " + comparacoes); 
+
+                System.out.println("Número de comparações: " + comparacoes);
             } else {
-                System.out.println("Opção inválida.");
+                System.out.println("Opção inválida."); 
             }
         }
 
-        entrada.close();
+        entrada.close(); 
     }
 }
-
