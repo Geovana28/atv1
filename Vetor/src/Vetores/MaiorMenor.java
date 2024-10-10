@@ -10,7 +10,7 @@ public class MaiorMenor {
             double menor = Double.MAX_VALUE;
 
             for (int i = 0; i < vetor.length; i++) {
-                System.out.print("Informe o número " + (i + 1) + ": ");
+                System.out.print("Digite o número para a posição " + i + " do vetor: ");
                 vetor[i] = entrada.nextDouble();
 
                 if (vetor[i] > maior) {
