@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Questao1C {
     public static void main(String[] args) {
-        try (Scanner entrada = new Scanner(System.in)) {
+        Scanner entrada = new Scanner(System.in);
             int i, j;
             int[][] matriz = new int[5][5];
 
@@ -30,6 +30,6 @@ public class Questao1C {
                 }
                 System.out.println();
             }
+        entrada.close();
         }
-    }
 }

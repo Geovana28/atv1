@@ -20,7 +20,7 @@ public class Media10Idades {
                     continue; 
                 }
 
-                somaIdades += idade; 
+                somaIdades = somaIdades + idade; 
             }
 
             double media = (double) somaIdades / quantidadeIdade;
